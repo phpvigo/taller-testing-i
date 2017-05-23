@@ -6,7 +6,8 @@
         "behat/mink-selenium2-driver": "^1.3",
         "behat/mink-extension": "^2.2",
         "behat/mink-goutte-driver": "^1.2",
-        "rexxars/html-validator": "^2.1"
+        "rexxars/html-validator": "^2.1",
+        "emuse/behat-html-formatter": "^0.1.0"
     },
     "config": {
         "bin-dir": "bin"

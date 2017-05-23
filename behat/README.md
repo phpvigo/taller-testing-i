@@ -28,6 +28,9 @@ bin/behat --lang=es --story-syntax
 
 # Ver pasos definididos (incluídos los de mink)
 bin/behat --definitions l
+
+# Sacar informe en html
+bin/behat -f html # ahora abre el fichero build/html/behat/index.html
 ```
 
 Docs:

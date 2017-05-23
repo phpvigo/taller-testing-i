@@ -1,6 +1,5 @@
 # language: es
-Característica: Calidad
-  Para asegurar un mínimo de calidad
+Característica: Estándares Web
   Como desarrollador
   Quiero que se pasen diversos estándares y controles de calidad
 
