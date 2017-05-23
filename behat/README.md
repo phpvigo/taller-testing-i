@@ -19,12 +19,18 @@ bin/behat
 
 ## Ayuda
 
-Ver sintáxis gherkin
-
 ```bash
+# Genérica behat
+bin/bheat --help
+
+# Ver sintáxis gherkin
 bin/behat --lang=es --story-syntax
+
+# Ver pasos definididos (incluídos los de mink)
+bin/behat --definitions l
 ```
 
 Docs:
 
 - [Behat](http://behat.org/en/latest/guides.html)
+- [Mink](http://mink.behat.org/en/latest/)

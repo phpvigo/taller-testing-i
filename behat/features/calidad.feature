@@ -1,7 +1,16 @@
 # language: es
 Característica: Calidad
+  Para asegurar un mínimo de calidad
+  Como desarrollador
+  Quiero que se pasen diversos estándares y controles de calidad
 
-Escenario: HTML5 Válido de phpvigo
-  Dado que accedo a https://phpvigo.com/
-  Cuando verifico el html contra validator.w3.org
-  Entonces El contenido html debe ser válido y no contener errores
+  Validar:
+    - HTML
+    - CSS
+    - Rendimiento
+    - Otros
+
+  Escenario: HTML5
+    Dado que estoy en la página de inicio
+    Cuando paso el validador HTML5 de w3c
+    Entonces no hay errores de validación

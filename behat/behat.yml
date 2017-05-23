@@ -1,0 +1,8 @@
+default:
+  # ...
+  extensions:
+    Behat\MinkExtension:
+      base_url:  'https://phpvigo.com/'
+      sessions:
+        default:
+          goutte: ~
