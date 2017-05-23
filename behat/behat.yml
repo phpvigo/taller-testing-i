@@ -1,5 +1,4 @@
 default:
-  # ...
   extensions:
     Behat\MinkExtension:
       base_url:  'https://phpvigo.com/'
