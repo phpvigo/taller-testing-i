@@ -30,9 +30,9 @@ Por ejemplo, para los 20 primeros números naturales:
     19
     Buzz
  
-Tenéis la plantilla básica en [/Scaffolding](https://github.com/phpvigo/taller-testing-i/FizzBuzz/Base)
+Tenéis la plantilla básica en [/Base](https://github.com/phpvigo/taller-testing-i/tree/master/FizzBuzz/Base)
 
-Podéis hacer las pull request contra el repositorio dentro de la carpeta [/Solutions/<nombre_usuario_github>][https://github.com/phpvigo/taller-testing-i/FizzBuzz/Solutions] y las revisaremos en el siguiente taller.
+Podéis hacer las pull request contra el repositorio dentro de la carpeta [/Solutions/<nombre_usuario_github>][https://github.com/phpvigo/taller-testing-i/tree/master/FizzBuzz/Solutions] y las revisaremos en el siguiente taller.
 
 Si queréis comentar algo relativo a los tests lo podemos hacer en el slack de [PHPVigo](https://phpvigo.com).
 
