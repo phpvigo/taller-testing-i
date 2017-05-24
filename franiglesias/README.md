@@ -1,5 +1,6 @@
 # Taller de testing en PHP
-Repositorio para taller de testing en 24 de Mayo de 2017 en PHPVIGO
+
+## Ejemplo PHPSpec
 
 Basado en:
 
@@ -22,5 +23,14 @@ Calculadora
     - "//;\n1;2" sería válido
     - Esta línea es opcional
     
+5. Bonus point: Haz que si se pasan números negativos lance una excepción. Inclúyelos en el mensaje.
 
-Calling Add with a negative number will throw an exception “negatives not allowed” - and the negative that was passed.if there are multiple negatives, show all of them in the exception message
+##Instalación
+
+    composer install
+
+
+##Comienzo
+
+    bin/phpspec describe kata/Calculator
+
