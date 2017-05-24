@@ -1,0 +1,19 @@
+default:
+  extensions:
+    Behat\MinkExtension:
+      base_url:  'https://phpvigo.com/'
+      sessions:
+        default:
+          goutte: ~
+    emuse\BehatHTMLFormatter\BehatHTMLFormatterExtension:
+      name: html
+      renderer: Twig,Behat2
+      file_name: index
+      print_args: true
+      print_outp: true
+      loop_break: true
+
+  formatters:
+    pretty: ~
+    html:
+      output_path: %paths.base%/build/html/behat
