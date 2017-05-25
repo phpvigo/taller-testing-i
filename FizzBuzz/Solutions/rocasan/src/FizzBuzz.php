@@ -47,5 +47,17 @@ class FizzBuzz {
 		}
 		return $substitution ?? $elem;
 	}
+	
+	/**
+	 * Format a generated list
+	 * @return string
+	 */
+	public function formattedList() {
+		$output = "";
+		foreach($this->substituteList($this->produceList()) as $elem) {
+			$output .= $elem . PHP_EOL;
+		}
+		return $output;
+	}
 
 }
