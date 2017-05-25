@@ -34,14 +34,14 @@ class FizzBuzz {
 	 * @return int
 	 */
 	protected function processElement($elem) {
-		$substitution = '';
+		$substitution = null;
 		if($elem % 3 == 0) {
 			$substitution .= 'Fizz';
 		}
 		if($elem % 5 == 0) {
 			$substitution .= 'Buzz';
 		}
-		return empty($substitution) ? $elem : $substitution;
+		return $substitution ?? $elem;
 	}
 
 }
