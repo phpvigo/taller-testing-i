@@ -4,8 +4,12 @@ namespace FizzBuzz;
 
 class FizzBuzz {
 
+	/**
+	 * Produce a list of numbers
+	 * @return array
+	 */
 	public function produceList() {
-		return range(1,100);
+		return range(1,20);
 	}
 
 	/**
