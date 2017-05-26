@@ -8,7 +8,6 @@
 
 namespace FizzBuzz;
 
-
 class FizzBuzz
 {
     public function of($number) {
