@@ -12,4 +12,9 @@ class FizzBuzzTest extends TestCase
         $fizzBuzz = new FizzBuzz();
         $this->assertEquals("1", $fizzBuzz->of(1));
     }
+
+    function test_the_answer_for_two_is_two() {
+        $fizzBuzz = new FizzBuzz();
+        $this->assertEquals("2", $fizzBuzz->of(2));
+    }
 }
