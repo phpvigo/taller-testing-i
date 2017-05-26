@@ -29,7 +29,6 @@ class FizzBuzzTest extends TestCase
     public function test_the_answer_for_multiples_of_five_is_buzz()
     {
         $this->assertEquals("Buzz", $this->fizzBuzz->of(5));
+        $this->assertEquals("Buzz", $this->fizzBuzz->of(10));
     }
-
-
 }
