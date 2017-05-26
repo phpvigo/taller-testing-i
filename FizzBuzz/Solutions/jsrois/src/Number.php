@@ -21,4 +21,9 @@ class Number
     public function isMultipleOf($number) {
         return $this->value % $number == 0;
     }
+
+    public function __toString()
+    {
+        return (string) $this->value;
+    }
 }
