@@ -10,28 +10,20 @@ namespace FizzBuzz;
 
 class FizzBuzz
 {
-    public function of($number) {
-        if ($this->isMultipleOfFive($number) && $this->isMultipleOfThree($number)) {
+    public function of($value) {
+        $number = new Number($value);
+
+        if ($number->isMultipleOf(3) && $number->isMultipleOf(5)) {
             return "FizzBuzz";
         }
 
-        if ($this->isMultipleOfFive($number)) {
+        if ($number->isMultipleOf(5)) {
             return "Buzz";
         }
 
-        if ($this->isMultipleOfThree($number)) {
+        if ($number->isMultipleOf(3)) {
             return "Fizz";
         }
         return (string) $number;
-    }
-
-    private function isMultipleOfThree($number)
-    {
-        return $number % 3 == 0;
-    }
-
-    private function isMultipleOfFive($number)
-    {
-        return $number % 5 == 0;
     }
 }
