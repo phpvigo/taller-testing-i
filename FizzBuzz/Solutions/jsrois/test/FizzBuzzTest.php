@@ -25,5 +25,10 @@ class FizzBuzzTest extends TestCase
         $this->assertEquals("Fizz", $this->fizzBuzz->of(3));
     }
 
+    public function test_the_answer_for_multiples_of_three_is_fizz()
+    {
+        $this->assertEquals("Fizz", $this->fizzBuzz->of(6));
+    }
+
 
 }
