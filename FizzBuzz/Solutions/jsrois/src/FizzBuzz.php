@@ -11,6 +11,10 @@ namespace FizzBuzz;
 class FizzBuzz
 {
     public function of($number) {
+        if ($this->isMultipleOfFive($number) && $this->isMultipleOfThree($number)) {
+            return "FizzBuzz";
+        }
+
         if ($this->isMultipleOfFive($number)) {
             return "Buzz";
         }
