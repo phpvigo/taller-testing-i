@@ -16,7 +16,7 @@ class FizzBuzz
         }
         return (string) $number;
     }
-    
+
     private function isMultipleOfThree($number)
     {
         return $number % 3 == 0;
