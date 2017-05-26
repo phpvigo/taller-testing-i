@@ -11,6 +11,6 @@ namespace FizzBuzz;
 class FizzBuzz
 {
     public function of($number) {
-        return "1";
+        return (string) $number;
     }
 }
