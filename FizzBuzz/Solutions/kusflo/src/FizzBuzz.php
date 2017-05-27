@@ -9,4 +9,8 @@ namespace FizzBuzz;
 class FizzBuzz
 {
 
+    public function getValueOf($int)
+    {
+        return $int;
+    }
 }
