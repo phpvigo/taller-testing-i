@@ -15,15 +15,17 @@ class FizzBuzzTest extends TestCase
     public function testValueIsNumber()
     {
         $fizzbuzz = new FizzBuzz();
-        $this->assertEquals($fizzbuzz->getValueOf(1), 1);
-        $this->assertEquals($fizzbuzz->getValueOf(2), 2);
-        $this->assertEquals($fizzbuzz->getValueOf(4), 4);
+        $this->assertEquals(1, $fizzbuzz->getValueOf(1));
+        $this->assertEquals(2, $fizzbuzz->getValueOf(2));
+        $this->assertEquals(4, $fizzbuzz->getValueOf(4));
     }
 
     public function testValueIsFizz()
     {
         $fizzbuzz = new FizzBuzz();
-        $this->assertEquals($fizzbuzz->getValueOf(3), 'Fizz');
+        $this->assertEquals('Fizz', $fizzbuzz->getValueOf(3));
+        $this->assertEquals('Fizz', $fizzbuzz->getValueOf(6));
+        $this->assertEquals('Fizz', $fizzbuzz->getValueOf(9));
     }
 
 }
