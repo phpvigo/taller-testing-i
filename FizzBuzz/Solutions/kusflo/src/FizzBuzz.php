@@ -15,6 +15,7 @@ class FizzBuzz
         $this->rules [] = new RuleNumbers();
         $this->rules [] = new RuleFizz();
         $this->rules [] = new RuleBuzz();
+        $this->rules [] = new RuleFizzBuzz();
     }
 
 
