@@ -12,14 +12,9 @@ class RuleNumbers implements RulesInterface
 
     public function check($number)
     {
-        if (is_numeric($number)) {
-            $this->value = $number;
+        $this->value = $number;
 
-            return true;
-        }
-        $this->value = '';
-
-        return false;
+        return (is_numeric($this->value));
     }
 
     public function getValue()

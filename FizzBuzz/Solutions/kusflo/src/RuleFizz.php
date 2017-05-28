@@ -8,23 +8,16 @@ namespace FizzBuzz;
 
 class RuleFizz implements RulesInterface
 {
-    private $value;
+    const _VALUE = 'Fizz';
 
     public function check($number)
     {
-        if (is_numeric($number) && ($number % 3) == 0) {
-            $this->value = 'Fizz';
-
-            return true;
-        }
-        $this->value = '';
-
-        return false;
+        return (is_numeric($number) && ($number % 3) == 0);
     }
 
     public function getValue()
     {
-        return $this->value;
+        return self::_VALUE;
     }
 
 
