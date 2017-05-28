@@ -33,7 +33,17 @@ class FizzBuzzTest extends TestCase
         $fizzbuzz = new FizzBuzz();
         $this->assertEquals('Buzz', $fizzbuzz->getValueOf(5));
         $this->assertEquals('Buzz', $fizzbuzz->getValueOf(10));
-        $this->assertEquals('Buzz', $fizzbuzz->getValueOf(15));
+        $this->assertEquals('Buzz', $fizzbuzz->getValueOf(20));
+    }
+
+    public function testValueIsFizzBuzz()
+    {
+        $fizzbuzz = new FizzBuzz();
+        $this->assertEquals('FizzBuzz', $fizzbuzz->getValueOf(15));
+        $this->assertEquals('FizzBuzz', $fizzbuzz->getValueOf(30));
+        $this->assertEquals('FizzBuzz', $fizzbuzz->getValueOf(45));
+        $this->assertEquals('FizzBuzz', $fizzbuzz->getValueOf(60));
+
     }
 
 }
