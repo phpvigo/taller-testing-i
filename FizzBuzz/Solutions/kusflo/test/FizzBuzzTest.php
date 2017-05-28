@@ -28,4 +28,12 @@ class FizzBuzzTest extends TestCase
         $this->assertEquals('Fizz', $fizzbuzz->getValueOf(9));
     }
 
+    public function testValueIsBuzz()
+    {
+        $fizzbuzz = new FizzBuzz();
+        $this->assertEquals('Buzz', $fizzbuzz->getValueOf(5));
+        $this->assertEquals('Buzz', $fizzbuzz->getValueOf(10));
+        $this->assertEquals('Buzz', $fizzbuzz->getValueOf(15));
+    }
+
 }
