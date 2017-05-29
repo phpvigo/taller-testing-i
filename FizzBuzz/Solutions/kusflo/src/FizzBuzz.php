@@ -5,20 +5,18 @@
 
 namespace FizzBuzz;
 
-
 class FizzBuzz
 {
     private $rules;
-
+    
     public function __construct()
     {
-        $this->rules [] = new RuleNumbers();
-        $this->rules [] = new RuleFizz();
-        $this->rules [] = new RuleBuzz();
-        $this->rules [] = new RuleFizzBuzz();
+        $this->addRule(new RuleNumbers());
+        $this->addRule(new RuleFizz());
+        $this->addRule(new RuleBuzz());
+        $this->addRule(new RuleFizzBuzz());
     }
-
-
+    
     public function getValueOf($number)
     {
         $value = null;
@@ -28,7 +26,12 @@ class FizzBuzz
                 $value = $rule->getValue();
             }
         }
-
+        
         return $value;
+    }
+    
+    private function addRule($rule)
+    {
+        $this->rules [] = $rule;
     }
 }
