@@ -3,24 +3,21 @@
  * @author Marcos Redondo <kusflo@gmail.com>
  */
 
-namespace FizzBuzz;
+namespace FizzBuzz\Results;
 
-
-class RuleNumbers implements RulesInterface
+class Number extends AbstractResult implements ResultsInterface
 {
     private $value;
-
+    
     public function check($number)
     {
         $this->value = $number;
-
-        return (is_numeric($this->value));
+        
+        return $this->rule->check($number);
     }
-
+    
     public function getValue()
     {
         return $this->value;
     }
-
-
 }

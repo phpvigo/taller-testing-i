@@ -42,8 +42,8 @@ class FizzBuzzTest extends TestCase
     
     public function testValueIsFizzBuzz()
     {
-        $this->assertEquals('FizzBuzz', $this->fizzbuzz->getValueOf(15));
         $this->assertEquals('FizzBuzz', $this->fizzbuzz->getValueOf(60));
+        $this->assertEquals('FizzBuzz', $this->fizzbuzz->getValueOf(90));
     }
     
     public function testValueHasNumberThreeIsFizz()

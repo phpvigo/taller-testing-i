@@ -3,13 +3,11 @@
  * @author Marcos Redondo <kusflo@gmail.com>
  */
 
-namespace FizzBuzz;
+namespace FizzBuzz\Results;
 
-
-interface RulesInterface
+interface ResultsInterface
 {
     public function check($number);
-
+    
     public function getValue();
-
 }

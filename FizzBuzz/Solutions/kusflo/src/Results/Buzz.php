@@ -3,15 +3,15 @@
  * @author Marcos Redondo <kusflo@gmail.com>
  */
 
-namespace FizzBuzz;
+namespace FizzBuzz\Results;
 
-class RuleBuzz implements RulesInterface
+class Buzz extends AbstractResult implements ResultsInterface
 {
     const _VALUE = 'Buzz';
     
     public function check($number)
     {
-        return ($number % 5 == 0);
+        return $this->rule->check($number);
     }
     
     public function getValue()
