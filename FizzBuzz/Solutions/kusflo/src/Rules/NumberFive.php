@@ -5,7 +5,7 @@
 
 namespace FizzBuzz\Rules;
 
-class NumberFive implements RulesInterface
+class NumberFive extends AbstractRule implements RulesInterface
 {
     public function check($number)
     {

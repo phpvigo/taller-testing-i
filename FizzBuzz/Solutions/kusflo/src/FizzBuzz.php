@@ -5,38 +5,17 @@
 
 namespace FizzBuzz;
 
-use FizzBuzz\Results\ResultsInterface;
-
 class FizzBuzz
 {
-    private $results;
+    private $manageRules;
     
-    public function __construct()
+    public function __construct(ManageRules $manageRules)
     {
-        $this->addResult(new Results\Number(new Rules\Number()));
-        $this->addResult(new Results\Fizz(new Rules\ModuleThree()));
-        $this->addResult(new Results\Buzz(new Rules\ModuleFive()));
-        $this->addResult(new Results\FizzBuzz(new Rules\ModuleThreeAndFive()));
-        $this->addResult(new Results\Fizz(new Rules\NumberThree()));
-        $this->addResult(new Results\Buzz(new Rules\NumberFive()));
-        $this->addResult(new Results\FizzBuzz(new Rules\NumberThreeAndFive()));
+        $this->manageRules = $manageRules;
     }
     
     public function getValueOf($number)
     {
-        $value = null;
-        /** @var $result ResultsInterface */
-        foreach ($this->results as $result) {
-            if ($result->check($number)) {
-                $value = $result->getValue();
-            }
-        }
-        
-        return $value;
-    }
-    
-    private function addResult($result)
-    {
-        $this->results [] = $result;
+        return $this->manageRules->getValueOf($number);
     }
 }

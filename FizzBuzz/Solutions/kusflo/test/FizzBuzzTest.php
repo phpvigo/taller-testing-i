@@ -6,6 +6,7 @@
 namespace FizzBuzz\Test;
 
 use FizzBuzz\FizzBuzz;
+use FizzBuzz\ManageRules;
 use PHPUnit\Framework\TestCase;
 
 class FizzBuzzTest extends TestCase
@@ -15,7 +16,8 @@ class FizzBuzzTest extends TestCase
     
     public function setUp()
     {
-        $this->fizzbuzz = new FizzBuzz();
+        $manage = new ManageRules();
+        $this->fizzbuzz = new FizzBuzz($manage);
         parent::setUp();
     }
     
